@@ -9,12 +9,12 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @Entity
-@Table(name = "Employee")
+@Table(name = "employee")
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private Integer id;
+    private Long id;
 
     @Column(name = "name", nullable = false, length = 100)
     private String name;

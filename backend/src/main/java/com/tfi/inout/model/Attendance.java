@@ -9,12 +9,12 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @Entity
-@Table(name = "Attendance")
+@Table(name = "attendance")
 public class Attendance {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private Integer id;
+    private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "employeeId")
