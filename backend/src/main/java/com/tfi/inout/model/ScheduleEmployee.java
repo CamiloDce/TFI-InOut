@@ -17,17 +17,17 @@ public class ScheduleEmployee {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "employeeId")
+    @JoinColumn(name = "employee_id")
     private Employee employee;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "scheduleId")
+    @JoinColumn(name = "schedule_id")
     private Schedule schedule;
 
-    @Column(name = "startDate")
+    @Column(name = "start_date")
     private LocalDate startDate;
 
-    @Column(name = "endDate")
+    @Column(name = "end_date")
     private LocalDate endDate;
 
 

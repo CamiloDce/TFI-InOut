@@ -17,16 +17,16 @@ public class DetailSchedule {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "scheduleId")
+    @JoinColumn(name = "schedule_id")
     private Schedule schedule;
 
     @Column(name = "day", length = 20)
     private String day;
 
-    @Column(name = "checkIn")
+    @Column(name = "check_in")
     private LocalTime checkIn;
 
-    @Column(name = "checkOut")
+    @Column(name = "check_out")
     private LocalTime checkOut;
 
 

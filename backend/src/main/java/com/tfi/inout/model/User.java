@@ -21,11 +21,11 @@ public class User {
     private String password;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "employeeId")
+    @JoinColumn(name = "employee_id")
     private Employee employee;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "roleId")
+    @JoinColumn(name = "role_id")
     private Role role;
 
     @Column(name = "state", length = 20)

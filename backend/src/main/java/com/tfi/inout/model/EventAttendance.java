@@ -17,10 +17,10 @@ public class EventAttendance {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "attendanceId")
+    @JoinColumn(name = "attendance_id")
     private Attendance attendance;
 
-    @Column(name = "eventType", length = 50)
+    @Column(name = "event_type", length = 50)
     private String eventType;
 
     @Column(name = "hour")

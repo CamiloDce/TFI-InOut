@@ -20,13 +20,13 @@ public class Schedule {
     @Column(name = "state", length = 20)
     private String state;
 
-    @Column(name = "hourWork")
+    @Column(name = "hour_work")
     private Integer hourWork;
 
-    @Column(name = "checkInTolerance")
+    @Column(name = "check_in_tolerance")
     private Integer checkInTolerance;
 
-    @Column(name = "checkOutTolerance")
+    @Column(name = "check_out_tolerance")
     private Integer checkOutTolerance;
 
 

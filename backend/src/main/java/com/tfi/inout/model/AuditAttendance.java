@@ -17,17 +17,17 @@ public class AuditAttendance {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "eventAttendanceId")
-    private EventAttendance eventAttendance;
+    @JoinColumn(name = "event_attendance_id")
+    private EventAttendance event_attendance;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "adminId")
+    @JoinColumn(name = "admin_id")
     private User admin;
 
-    @Column(name = "previousValue")
+    @Column(name = "previous_value")
     private String previousValue;
 
-    @Column(name = "newValue")
+    @Column(name = "new_value")
     private String newValue;
 
     @Column(name = "date")

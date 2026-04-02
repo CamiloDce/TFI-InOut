@@ -17,7 +17,7 @@ public class Attendance {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "employeeId")
+    @JoinColumn(name = "employee_id")
     private Employee employee;
 
     @Column(name = "date")

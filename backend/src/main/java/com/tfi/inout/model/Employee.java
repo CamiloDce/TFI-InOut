@@ -19,10 +19,10 @@ public class Employee {
     @Column(name = "name", nullable = false, length = 100)
     private String name;
 
-    @Column(name = "lastName", nullable = false, length = 100)
+    @Column(name = "last_name", nullable = false, length = 100)
     private String lastName;
 
-    @Column(name = "numberEmployee", length = 50)
+    @Column(name = "number_employee", length = 50)
     private String numberEmployee;
 
     @Column(name = "cuil", length = 20)
@@ -34,7 +34,7 @@ public class Employee {
     @Column(name = "state", length = 20)
     private String state;
 
-    @Column(name = "dateEntry")
+    @Column(name = "date_entry")
     private LocalDate dateEntry;
 
 
