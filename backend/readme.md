@@ -14,3 +14,4 @@ y si no...
 To do
 AGREGAR Validaciones
 AGREGAR Autentificador de token
+pasar FK a tabla "Employee" "userId"
