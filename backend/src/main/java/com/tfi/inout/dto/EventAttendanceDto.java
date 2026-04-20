@@ -11,7 +11,7 @@ import java.time.LocalTime;
 @NoArgsConstructor
 public class EventAttendanceDto {
     private Long id;
-    private Long attendance;
+    private Long employee;
     private String eventType;
     private LocalTime hour;
     private String device;

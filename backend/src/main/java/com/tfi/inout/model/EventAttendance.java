@@ -17,8 +17,8 @@ public class EventAttendance {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "attendance_id")
-    private Attendance attendance;
+    @JoinColumn(name = "employee_id")
+    private Employee employee;
 
     @Column(name = "event_type", length = 50)
     private String eventType;
